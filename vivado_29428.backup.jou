@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 23 22:09:11 2023
+# Process ID: 29428
+# Current directory: E:/Code/mccpu8964
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33524 E:\Code\mccpu8964\mccpu.xpr
+# Log file: E:/Code/mccpu8964/vivado.log
+# Journal file: E:/Code/mccpu8964\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Code/mccpu8964/mccpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close [ open E:/Code/mccpu8964/mccpu.srcs/sources_1/new/mccpu_display.v w ]
+add_files E:/Code/mccpu8964/mccpu.srcs/sources_1/new/mccpu_display.v
+update_compile_order -fileset sources_1
+add_files -norecurse E:/Code/mccpu8964/lcd_module.dcp
+update_compile_order -fileset sources_1
+file mkdir E:/Code/mccpu8964/mccpu.srcs/constrs_1
+file mkdir E:/Code/mccpu8964/mccpu.srcs/constrs_1/new
+close [ open E:/Code/mccpu8964/mccpu.srcs/constrs_1/new/mem.xdc w ]
+add_files -fileset constrs_1 E:/Code/mccpu8964/mccpu.srcs/constrs_1/new/mem.xdc
+update_compile_order -fileset sources_1
+close [ open E:/Code/mccpu8964/mccpu.srcs/sources_1/new/adder.v w ]
+add_files E:/Code/mccpu8964/mccpu.srcs/sources_1/new/adder.v
+update_compile_order -fileset sources_1
+close [ open E:/Code/mccpu8964/mccpu.srcs/sources_1/new/decoder4x16.v w ]
+add_files E:/Code/mccpu8964/mccpu.srcs/sources_1/new/decoder4x16.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close [ open E:/Code/mccpu8964/mccpu.srcs/sources_1/new/mux8x32.v w ]
+add_files E:/Code/mccpu8964/mccpu.srcs/sources_1/new/mux8x32.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {1100ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim
+launch_simulation
+source multi_cycle_cpu_tb.tcl
+close_sim

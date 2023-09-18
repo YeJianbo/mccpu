@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../mccpu.srcs/sources_1/new/alu.v" \
+"../../../../mccpu.srcs/sources_1/new/cu.v" \
+"../../../../mccpu.srcs/sources_1/new/decoder4x16.v" \
+"../../../../mccpu.srcs/sources_1/new/mem.v" \
+"../../../../mccpu.srcs/sources_1/new/multi_cycle_cpu.v" \
+"../../../../mccpu.srcs/sources_1/new/mux2x32.v" \
+"../../../../mccpu.srcs/sources_1/new/mux2x5.v" \
+"../../../../mccpu.srcs/sources_1/new/mux4x32.v" \
+"../../../../mccpu.srcs/sources_1/new/reg32.v" \
+"../../../../mccpu.srcs/sources_1/new/rege32.v" \
+"../../../../mccpu.srcs/sources_1/new/regfile.v" \
+"../../../../mccpu.srcs/sources_1/new/shift.v" \
+"../../../../mccpu.srcs/sources_1/new/top.v" \
+"../../../../mccpu.srcs/sim_1/new/multi_cycle_cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

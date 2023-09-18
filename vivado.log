@@ -1,0 +1,416 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 18 10:21:23 2023
+# Process ID: 4312
+# Current directory: E:/Code/mccpu114514
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12592 E:\Code\mccpu114514\mccpu.xpr
+# Log file: E:/Code/mccpu114514/vivado.log
+# Journal file: E:/Code/mccpu114514\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Code/mccpu114514/mccpu.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Code/mccpu8964' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multi_cycle_cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj multi_cycle_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rdata' is not allowed [E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/multi_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux4x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/rege32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rege32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sim_1/new/multi_cycle_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xelab -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" Line 2. Module alu doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.rege32
+Compiling module xil_defaultlib.reg32
+Compiling module xil_defaultlib.mux4x32
+Compiling module xil_defaultlib.mux2x32
+Compiling module xil_defaultlib.mux2x5
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shift
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.multi_cycle_cpu
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.multi_cycle_cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot multi_cycle_cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multi_cycle_cpu_tb_behav -key {Behavioral:sim_1:Functional:multi_cycle_cpu_tb} -tclbatch {multi_cycle_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source multi_cycle_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multi_cycle_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 931.914 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files E:/Code/mccpu114514/mccpu.srcs/sources_1/new/addsub32.v] -no_script -reset -force -quiet
+remove_files  E:/Code/mccpu114514/mccpu.srcs/sources_1/new/addsub32.v
+remove_files  E:/Code/mccpu114514/mccpu.srcs/sources_1/new/addsub32.v
+WARNING: [Vivado 12-818] No files matched 'E:/Code/mccpu114514/mccpu.srcs/sources_1/new/addsub32.v'
+file delete -force E:/Code/mccpu114514/mccpu.srcs/sources_1/new/addsub32.v
+export_ip_user_files -of_objects  [get_files E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cla32.v] -no_script -reset -force -quiet
+remove_files  E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cla32.v
+file delete -force E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cla32.v
+export_ip_user_files -of_objects  [get_files E:/Code/mccpu114514/mccpu.srcs/sources_1/new/adder.v] -no_script -reset -force -quiet
+remove_files  E:/Code/mccpu114514/mccpu.srcs/sources_1/new/adder.v
+file delete -force E:/Code/mccpu114514/mccpu.srcs/sources_1/new/adder.v
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multi_cycle_cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj multi_cycle_cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xelab -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multi_cycle_cpu_tb_behav -key {Behavioral:sim_1:Functional:multi_cycle_cpu_tb} -tclbatch {multi_cycle_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source multi_cycle_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multi_cycle_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 931.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multi_cycle_cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj multi_cycle_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rdata' is not allowed [E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/multi_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux4x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/rege32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rege32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sim_1/new/multi_cycle_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xelab -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" Line 2. Module alu doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.rege32
+Compiling module xil_defaultlib.reg32
+Compiling module xil_defaultlib.mux4x32
+Compiling module xil_defaultlib.mux2x32
+Compiling module xil_defaultlib.mux2x5
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shift
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.multi_cycle_cpu
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.multi_cycle_cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot multi_cycle_cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multi_cycle_cpu_tb_behav -key {Behavioral:sim_1:Functional:multi_cycle_cpu_tb} -tclbatch {multi_cycle_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source multi_cycle_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multi_cycle_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 931.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multi_cycle_cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj multi_cycle_cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rdata' is not allowed [E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mem.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/multi_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux2x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/mux4x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/rege32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rege32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/mccpu114514/mccpu.srcs/sim_1/new/multi_cycle_cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_cycle_cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xelab -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Code/mccpu114514/mccpu.srcs/sources_1/new/alu.v" Line 2. Module alu doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.rege32
+Compiling module xil_defaultlib.reg32
+Compiling module xil_defaultlib.mux4x32
+Compiling module xil_defaultlib.mux2x32
+Compiling module xil_defaultlib.mux2x5
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shift
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.multi_cycle_cpu
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.multi_cycle_cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot multi_cycle_cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multi_cycle_cpu_tb_behav -key {Behavioral:sim_1:Functional:multi_cycle_cpu_tb} -tclbatch {multi_cycle_cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source multi_cycle_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multi_cycle_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1014.547 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/multi_cycle_cpu_tb/cpu/cpu/rf/register}} 
+save_wave_config {E:/Code/mccpu114514/multi_cycle_cpu_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/Code/mccpu114514/multi_cycle_cpu_tb_behav.wcfg
+set_property xsim.view E:/Code/mccpu114514/multi_cycle_cpu_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'multi_cycle_cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [SIM-utils-43] Exported 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim/inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj multi_cycle_cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+"xelab -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ab36ef995fe24cffaa2266fa1514fee6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot multi_cycle_cpu_tb_behav xil_defaultlib.multi_cycle_cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/mccpu114514/mccpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "multi_cycle_cpu_tb_behav -key {Behavioral:sim_1:Functional:multi_cycle_cpu_tb} -tclbatch {multi_cycle_cpu_tb.tcl} -view {E:/Code/mccpu114514/multi_cycle_cpu_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config E:/Code/mccpu114514/multi_cycle_cpu_tb_behav.wcfg
+source multi_cycle_cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multi_cycle_cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 16:10:26 2023...
